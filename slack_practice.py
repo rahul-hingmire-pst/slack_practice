@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 class SlackApp:
     def __init__(self, verification_token, port=3000):
-        self.app = Flask(__name__)
+        self.app = Flask(__name__)  
         self.verification_token = verification_token
 
         @self.app.route('/slack/events', methods=['POST'])
