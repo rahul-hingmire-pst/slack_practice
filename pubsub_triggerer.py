@@ -1,7 +1,7 @@
 import json
 import base64
 
-#Types of cloud Function 3:Triggered by messages published to Cloud Pub/Sub topics(Context and event)
+#Types of cloud Function 3:Triggered by messages published to Cloud Pub/Sub topics(Context and event    )
 # This function is also the Event driven function
 def pubsub_trigger(event, context):
     message_data = base64.b64decode(event['data']).decode('utf-8')
