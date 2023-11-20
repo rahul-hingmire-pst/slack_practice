@@ -38,4 +38,4 @@ def save_data_to_file(data):
     file_path = 'user_data.json'  
     with open(file_path, 'a') as file:
         json.dump(data, file)
-        file.write('\n')  
+        file.write('\n')
